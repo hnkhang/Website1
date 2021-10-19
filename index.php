@@ -164,10 +164,10 @@
             include_once("Product_Management.php");
         }
         elseif($page=='add_category'){
-            include_once("Add_category.php");
+            include_once("Add_Category.php");
         }
         elseif($page=='update_category'){
-            include_once("Update_category.php");
+            include_once("Update_Category.php");
         }
         elseif($page=='add_product'){
             include_once("Add_Product.php");
