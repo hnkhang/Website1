@@ -34,7 +34,7 @@
 	if(isset($_GET["id"])){
 		$id = $_GET["id"];
 		$result= pg_query($conn, "SELECT * FROM category where cat_id='$id'");
-		$row = pg_fetch_array($result, Null, PG_ASSOC);
+		$row = pg_fetch_array($result, Null, PGSQL_ASSOC);
 		$cat_id = $row['cat_id'];
 		$cat_name = $row['cat_name'];
 		$cat_des = $row['cat_des'];

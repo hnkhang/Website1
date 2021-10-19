@@ -10,7 +10,7 @@
 		$result = pg_query($conn, $sqlstring);
 		echo "<select name='CategoryList' class='form-control'>
 		<option value='0'>Choose category</option>";
-		while ($row = pg_fetch_array($result, Null, PG_ASSOC)){
+		while ($row = pg_fetch_array($result, Null, PGSQL_ASSOC)){
 			if($row['Cat_ID']==$selectedValue){
 				echo"<option value='". $row['cat_id']."' selected>".$row['cat_name']."</option>";
 			}
@@ -106,7 +106,7 @@
 		 pro_image, cat_id from product where product_id='$id'";
 
 		 $result= pg_query($conn,$sqlstring);
-		 $row = pg_fetch_array($result, Null, PG_ASSOC);	
+		 $row = pg_fetch_array($result, Null, PGSQL_ASSOC);	
 		 
 		 $proname= $row['product_name'];
 		 $price = $row['price'];

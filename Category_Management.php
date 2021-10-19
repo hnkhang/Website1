@@ -33,7 +33,7 @@
                 include_once("connection.php");
                 $NO = 1;
                 $result = pg_query($conn,"SELECT * FROM category");
-                while($row=pg_fetch_array($result, Null, PG_ASSOC))
+                while($row=pg_fetch_array($result, Null, PGSQL_ASSOC))
                 {
             ?>
 			<tr>

@@ -24,7 +24,7 @@ include_once("connection.php");
                         $sq = "select pro_image from product WHERE product_id = '$id'";
 
                         $res = pg_query($conn, $sq);
-                        $row = pg_fetch_array($res, Null, PG_ASSOC);
+                        $row = pg_fetch_array($res, Null, PGSQL_ASSOC);
                         $filepic = $row['Pro_image'];
                         unlink("assets/images/".$filepic);
                         pg_query($conn, "DELETE From product where product_id = '$id'");
@@ -57,7 +57,7 @@ include_once("connection.php");
                 From product a, category b
                 where a.cat_id = b.cat_id order by price DESC ");
 
-                while($row=pg_fetch_array($result, Null, PG_ASSOC))
+                while($row=pg_fetch_array($result, Null, PGSQL_ASSOC))
                 {
 			?>
 			<tr>
