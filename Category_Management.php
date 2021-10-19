@@ -40,8 +40,8 @@
               <td class="cotCheckBox"><?php echo $NO;?></td>
               <td><?php echo $row["cat_name"];?></td>
               <td><?php echo $row["cat_des"];?></td>
-              <td style='text-align:center'><a href="?page=update_category&&id=<?php echo $row["Cat_ID"];?>"><img src='assets/images/edit.png' border='0'  /> </a></td>
-              <td style='text-align:center'><a href="?page=category_management&&function=del&&id=<?php echo $row["Cat_ID"];?>" onclick="return DeleteConfirm()"><img src='assets/images/delete.png' border='0' /> </a></td>
+              <td style='text-align:center'><a href="?page=update_category&&id=<?php echo $row["cat_id"];?>"><img src='assets/images/edit.png' border='0'  /> </a></td>
+              <td style='text-align:center'><a href="?page=category_management&&function=del&&id=<?php echo $row["cat_id"];?>" onclick="return DeleteConfirm()"><img src='assets/images/delete.png' border='0' /> </a></td>
             </tr>
             <?php
             $NO++;
