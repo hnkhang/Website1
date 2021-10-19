@@ -40,14 +40,14 @@
             echo $err;
         }
         else{
-                $us = htmlspecialchars(mysqli_real_escape_string($conn,$us));
-				$email = htmlspecialchars(mysqli_real_escape_string($conn,$email));
-				$sub = htmlspecialchars(mysqli_real_escape_string($conn,$sub));
+                $us = htmlspecialchars(pg_real_escape_string($conn,$us));
+				$email = htmlspecialchars(pg_real_escape_string($conn,$email));
+				$sub = htmlspecialchars(pg_real_escape_string($conn,$sub));
 				
-                $sq = "SELECT * FROM booking where Username='$us' and email = '$email' and ReservationDate='$date' and ReservationMonth='$month' and ReservationYear='$year'";
-				$result = mysqli_query($conn, $sq);
-				if(mysqli_num_rows($result)==0){
-					mysqli_query($conn, "INSERT INTO booking (Username, email, ReservationDate, ReservationMonth, ReservationYear, Specification) 
+                $sq = "SELECT * FROM booking where username='$us' and email = '$email' and reservationdate='$date' and reservationmonth='$month' and reservationyear='$year'";
+				$result = pg_query($conn, $sq);
+				if(pg_num_rows($result)==0){
+					pg_query($conn, "INSERT INTO booking (username, email, reservationdate, reservationmonth, reservationyear, specification) 
                     VALUES ('$us', '$email', '$date', '$month', '$year', '$sub')");
 					echo "<script>alert('Your information has been sent, an email will arrive shortly')</script>";
                 }

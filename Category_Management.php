@@ -32,14 +32,14 @@
             <?php
                 include_once("connection.php");
                 $NO = 1;
-                $result = mysqli_query($conn,"SELECT * FROM category");
-                while($row=mysqli_fetch_array($result, MYSQLI_ASSOC))
+                $result = pg_query($conn,"SELECT * FROM category");
+                while($row=pg_fetch_array($result, Null, PG_ASSOC))
                 {
             ?>
 			<tr>
               <td class="cotCheckBox"><?php echo $NO;?></td>
-              <td><?php echo $row["Cat_Name"];?></td>
-              <td><?php echo $row["Cat_Des"];?></td>
+              <td><?php echo $row["cat_name"];?></td>
+              <td><?php echo $row["cat_des"];?></td>
               <td style='text-align:center'><a href="?page=update_category&&id=<?php echo $row["Cat_ID"];?>"><img src='assets/images/edit.png' border='0'  /> </a></td>
               <td style='text-align:center'><a href="?page=category_management&&function=del&&id=<?php echo $row["Cat_ID"];?>" onclick="return DeleteConfirm()"><img src='assets/images/delete.png' border='0' /> </a></td>
             </tr>
@@ -51,8 +51,8 @@
                 if(isset($_GET["function"])=="del"){
                     if(isset($_GET["id"])){
                         $id = $_GET["id"];
-                        mysqli_query($conn, "DELETE From product where Cat_ID='$id'");
-                        mysqli_query($conn, "DELETE From Category where Cat_ID='$id'");
+                        pg_query($conn, "DELETE From product where cat_id='$id'");
+                        pg_query($conn, "DELETE From category where cat_id='$id'");
                     }
                 }
             ?>

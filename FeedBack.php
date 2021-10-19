@@ -34,14 +34,14 @@
             echo $err;
         }
         else{
-                $us = htmlspecialchars(mysqli_real_escape_string($conn,$us));
-				$email = htmlspecialchars(mysqli_real_escape_string($conn,$email));
-				$sub = htmlspecialchars(mysqli_real_escape_string($conn,$sub));
+                $us = htmlspecialchars(pg_real_escape_string($conn,$us));
+				$email = htmlspecialchars(pg_real_escape_string($conn,$email));
+				$sub = htmlspecialchars(pg_real_escape_string($conn,$sub));
 				
-                $sq = "SELECT * FROM feedback where Username='$us' and Email = '$email' and Description='$sub'";
-				$result = mysqli_query($conn, $sq);
-				if(mysqli_num_rows($result)==0){
-					mysqli_query($conn, "INSERT INTO feedback (Username, Email, Description) VALUES ('$us', '$email', '$sub')");
+                $sq = "SELECT * FROM feedback where username='$us' and email = '$email' and description='$sub'";
+				$result = pg_query($conn, $sq);
+				if(pg_num_rows($result)==0){
+					pg_query($conn, "INSERT INTO feedback (username, email, description) VALUES ('$us', '$email', '$sub')");
 					echo "<script>alert('Feedback sent thanks for your opinion')</script>";
 
                 }

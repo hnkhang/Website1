@@ -6,16 +6,16 @@
 <?php
 	include_once("connection.php");
 	function bind_Category_List($conn, $selectedValue){
-		$sqlstring ="SELECT Cat_ID, Cat_Name from category";
-		$result = mysqli_query($conn, $sqlstring);
+		$sqlstring ="SELECT cat_id, cat_name from category";
+		$result = pg_query($conn, $sqlstring);
 		echo "<select name='CategoryList' class='form-control'>
 		<option value='0'>Choose category</option>";
-		while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+		while ($row = pg_fetch_array($result, Null, PG_ASSOC)){
 			if($row['Cat_ID']==$selectedValue){
-				echo"<option value='". $row['Cat_ID']."' selected>".$row['Cat_Name']."</option>";
+				echo"<option value='". $row['cat_id']."' selected>".$row['cat_name']."</option>";
 			}
 			else{
-				echo "<option value='".$row['Cat_ID']."'>".$row['Cat_Name']."</option>";
+				echo "<option value='".$row['cat_id']."'>".$row['cat_name']."</option>";
 			}
 		}
 	echo"</select>";
@@ -54,14 +54,14 @@
 			if($pic['type']=="image/png" || $pic['type']=="image/jpg" || $pic['type']=="image/jpeg" || $pic['type']=="image/gif")
 			{
 				if($pic['size'] <= 614000){
-					$sq = "SELECT * From product where Product_ID !='$id' and Product_Name='$proname'";
-					$result = mysqli_query($conn,$sq);
-					if(mysqli_num_rows($result)==0){
+					$sq = "SELECT * From product where product_id !='$id' and product_name='$proname'";
+					$result = pg_query($conn,$sq);
+					if(pg_num_rows($result)==0){
 						copy($pic['tmp_name'], "assets/images/".$pic['name']);
 						$filePic = $pic['name'];
-						$sqlstring = "Update product set Product_Name='$proname', Price='$price', DetailDesc='$detail', Pro_image='$pic', Cat_ID='$category' where Product_ID='$id' ";
+						$sqlstring = "UPDATE product set product_name='$proname', price='$price', detaildesc='$detail', pro_image='$pic', cat_id='$category' where product_id='$id' ";
 						
-						mysqli_query($conn,$sqlstring);
+						pg_query($conn,$sqlstring);
 						echo '<meta http-equiv="refresh" content="0; URL=?page=product_management">';
 					}
 					else{
@@ -80,13 +80,13 @@
 			}
 		}
 			else {
-				$sq = "SELECT * From product where Product_ID !='$id' and Product_Name='$proname'";
-						$result = mysqli_query($conn,$sq);
-						if(mysqli_num_rows($result)==0){
+				$sq = "SELECT * From product where product_id !='$id' and product_name='$proname'";
+						$result = pg_query($conn,$sq);
+						if(pg_num_rows($result)==0){
 
-							$sqlstring = "Update product set Product_Name='$proname', Price='$price', DetailDesc='$detail', Cat_ID='$category' where Product_ID='$id'";
+							$sqlstring = "UPDATE product set product_name='$proname', price='$price', detaildesc='$detail', cat_id='$category' where product_id='$id'";
 							
-							mysqli_query($conn,$sqlstring);
+							pg_query($conn,$sqlstring);
 							echo '<meta http-equiv="refresh" content="0; URL=?page=product_management">';
 			             }	
 						else {
@@ -102,17 +102,17 @@
 <?php
 	if(isset($_GET["id"])){
 		$id = $_GET["id"];
-		$sqlstring = "SELECT Product_Name, Price, DetailDesc,
-		 Pro_image, Cat_ID from product where Product_ID='$id'";
+		$sqlstring = "SELECT product_name, price, detaildesc,
+		 pro_image, cat_id from product where product_id='$id'";
 
-		 $result= mysqli_query($conn,$sqlstring);
-		 $row = mysqli_fetch_array($result,MYSQLI_ASSOC);	
+		 $result= pg_query($conn,$sqlstring);
+		 $row = pg_fetch_array($result, Null, PG_ASSOC);	
 		 
-		 $proname= $row['Product_Name'];
-		 $price = $row['Price'];
-		 $detail = $row['DetailDesc'];
-		 $pic = $row['Pro_image'];
-		 $category = $row['Cat_ID'];	
+		 $proname= $row['product_name'];
+		 $price = $row['price'];
+		 $detail = $row['detaildesc'];
+		 $pic = $row['pro_image'];
+		 $category = $row['cat_id'];	
 ?>
 <div class="container">
 	<h2>Updating Product</h2>
