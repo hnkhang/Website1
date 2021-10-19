@@ -11,7 +11,7 @@
 		echo "<select name='CategoryList' class='form-control'>
 		<option value='0'>Choose category</option>";
 		while ($row = pg_fetch_array($result, Null, PGSQL_ASSOC)){
-			if($row['Cat_ID']==$selectedValue){
+			if($row['cat_id']==$selectedValue){
 				echo"<option value='". $row['cat_id']."' selected>".$row['cat_name']."</option>";
 			}
 			else{
@@ -122,7 +122,7 @@
 					<label for="txtTen" class="col-sm-2 control-label">Product ID(*):  </label>
 							<div class="col-sm-10">
 								  <input type="text" name="txtID" id="txtID" class="form-control" 
-								  placeholder="Product ID" readonly value='<?php echo $id; ?>'/>
+								  placeholder="Product ID" value='<?php echo $id; ?>'/>
 							</div>
 				</div> 
 				<div class="form-group"> 
