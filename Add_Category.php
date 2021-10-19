@@ -27,7 +27,7 @@
 				$result = pg_query($conn, $sq);
 				if(pg_num_rows($result)==0){
 					pg_query($conn, "INSERT INTO category (cat_id, cat_name, cat_des) VALUES ('$id', '$name', '$des')");
-					echo '<meta http-equiv="refresh" content="0; URL=?page=category_management"/>';
+					echo '<meta http-equiv="refresh" content="0; URL=?page=Category_Management"/>';
 				}
 				else{
 					echo '<li> Duplicate ID or name</li>';
