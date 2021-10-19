@@ -11,7 +11,7 @@
 		echo "<select name='CategoryList' class= 'form-control'>
 		<option value='0'>Choose category</option>";
 		while($row=pg_fetch_array($result, Null, PGSQL_ASSOC)){
-			echo "<option value='".$row['Cat_ID']."'>".$row['Cat_Name']."</option>";
+			echo "<option value='".$row['cat_id']."'>".$row['cat_name']."</option>";
 	}
 	echo "</select>";
 	}
