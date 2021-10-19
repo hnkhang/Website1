@@ -40,19 +40,19 @@
 				
                 $sq = "SELECT * FROM feedback where username='$us' and email = '$email' and description='$sub'";
 				$result = pg_query($conn, $sq);
-				if(pg_num_rows($result)==0){
+				if(pg_num_rows($result)==0)
+                {
 					pg_query($conn, "INSERT INTO feedback (username, email, description) VALUES ('$us', '$email', '$sub')");
 					echo "<script>alert('Feedback sent thanks for your opinion')</script>";
 
                 }
-                else{
+                else
+                {
 					echo '<li> Duplicate record</li>';
 				}
-        
-
-       
+      
+            }
     }
-}
 ?>
 <h1>Your Feedback</h1>
 <form id="form1" name="form1" method="POST" >
