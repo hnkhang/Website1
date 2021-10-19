@@ -68,8 +68,8 @@ include_once("connection.php");
               <td><?php echo $row["cat_name"]; ?></td>
              <td align='center' class='cotNutChucNang'>
                  <img src='assets/images/<?php echo $row['pro_image'] ?>' border='0' width="50" height="50"  /></td>
-             <td align='center' class='cotNutChucNang'><a href="?page=update_product&&id=<?php echo $row["Product_ID"];?>"><img src='assets/images/edit.png' border='0'/></a></td>
-             <td align='center' class='cotNutChucNang'><a href="?page=product_management&&function=del&&id=<?php echo $row["Product_ID"];?>" onclick="return DeleteConfirm()"><img src='assets/images/delete.png' border='0' /></a></td>
+             <td align='center' class='cotNutChucNang'><a href="?page=update_product&&id=<?php echo $row["product_id"];?>"><img src='assets/images/edit.png' border='0'/></a></td>
+             <td align='center' class='cotNutChucNang'><a href="?page=product_management&&function=del&&id=<?php echo $row["product_id"];?>" onclick="return DeleteConfirm()"><img src='assets/images/delete.png' border='0' /></a></td>
             </tr>
             <?php
                $No++;
