@@ -825,20 +825,20 @@ font-size: 6rem;
 }
 
 .single_pakeg_one{
-	background:url(../images/newsone.jpg) left center no-repeat;
+	background:url(../images/Company_Branch.png) left center no-repeat;
 	padding:30px;
 	overflow:hidden;
 	margin-top:60px;
 }
 .single_pakeg_two{
-	background:url(../images/newstwo.jpg) right center no-repeat;
+	background:url(../images/Feature.png) right center no-repeat;
 	padding:30px;	
 	overflow:hidden;
 	margin-top:60px;	
 	
 }
 .single_pakeg_three{
-	background:url(../images/newsthree.jpg) left center no-repeat;
+	background:url(../images/best_seller.png) left center no-repeat;
 	padding:30px;	
 	overflow:hidden;
 	margin-top:60px;	

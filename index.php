@@ -137,8 +137,8 @@
                         <div class="main_slider text-center">
                             <div class="col-md-12">
                                 <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
-                                    <h1>Bunny Restaurant</h1>
-                                    <p> The best place in the world for food lovers. Come and dine with us, we have many type of desserts, meal and drink of your liking </p>
+                                    <h1>ATN toy company</h1>
+                                    <p> The best place in the world for toy lovers</p>
                                     
                                 </div>
                             </div>	
@@ -208,7 +208,7 @@
                                         <span>Unknown city,</span>
                                         <span>Oblivion</span>
                                         <span class="phone_email">phone: 0342 552 442</span>
-                                        <span>Email: BunnyRestaurant@gmail.com</span></p>
+                                        <span>Email: ATNtoy@gmail.com</span></p>
                                 </div>
 
                                 <div class="footer_socail_icon">
@@ -230,12 +230,12 @@
 
                                 <div class="single_widget_info">
                                     <p><span class="date_day">Monday To Friday</span>
-                                        <span>8:00am to 10:00am(Breakfast)</span>
-                                        <span>11:00am to 10:00pm(Lunch/Diner)</span>
+                                        <span>From 8:00am to 10:00pm</span>
+                                        
 
                                         <span class="date_day">Saturday & Sunday</span>
-                                        <span>9:00am to 11:00am(Brunch)</span>
-                                        <span>11:00am to 12:00pm(Lunch/Dinner)</span></p>
+                                        <span>9:00am to 11:00Pm</span>
+                                        
                                 </div>
                             </div>
                         </div>

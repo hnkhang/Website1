@@ -41,7 +41,7 @@ include_once("connection.php");
                         <div class="col-md-6">
                             <div class="single_abouts_text wow slideInRight" data-wow-duration="1s">
                                 <h4>About us</h4>
-                                <h3>Our meals are sublime and so are we. With ten years of experience in cooking and making food, we have made a great reputation and our products are well-known</h3>
+                                <h3>ATN is a Vietnamese company which is selling toys to teenagers in many provinces all over Vietnam. The company has the revenue over 700.000 dollars/year</h3>
                                 <p></p>
 
                                 <p></p>
@@ -140,23 +140,17 @@ include_once("connection.php");
                     <div class="row">
                         <div class="head_title text-center">
                             <h4>Amazing</h4>
-                            <h3>Menu</h3>
+                            <h3>Best of us</h3>
                         </div>
 
                         <div class="single_pakeg_one text-right wow rotateInDownRight">
                             <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
                                 <div class="single_pakeg_text">
                                     <div class="pakeg_title">
-                                        <h4>Drinks</h4>
+                                        <h4>Company Branch</h4>
                                     </div>
 
-                                    <ul>
-                                        <li> Wine...............................................................$24.5 </li>
-                                        <li> White Coffee...............................................................$4.5 </li>
-                                        <li> Coffee...............................................................$4 </li>
-                                        <li> Soft Drink...............................................................$2 </li>
-                                        <li> Juice...............................................................$2 </li>
-                                    </ul>
+                                    <h5> The ATN company has many stores all over Viet Nam. Our stores locate in Ho Chi Minh city, Can Tho city, Ha Noi capital,... </h5>
                                 </div>
                             </div>
                         </div>
@@ -165,15 +159,15 @@ include_once("connection.php");
                             <div class="col-md-6 col-sm-8">
                                 <div class="single_pakeg_text">
                                     <div class="pakeg_title">
-                                        <h4>Main course </h4>
+                                        <h4>Feature </h4>
                                     </div>
 
                                     <ul>
-                                        <li> Tuna Roast Source........................................................$24.5 </li>
-                                        <li> Roasted chicken..........................................................$29.5 </li>
-                                        <li> Beefsteak................................................................$30 </li>
-                                        <li> Caliva...................................................................$40.99 </li>
-                                        <li> Pho......................................................................$25.5 </li>
+                                        <li> We sell many toys from big to small  </li>
+                                        <li> Online support 24/7 </li>
+                                        <li> Our website support online ordering </li>
+                                        <li> Toys suitable for tenager and kid alike </li>
+                                        <li> We deliver our toys with love </li>
                                     </ul>
                                 </div>
                             </div>
@@ -183,16 +177,10 @@ include_once("connection.php");
                             <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
                                 <div class="single_pakeg_text">
                                     <div class="pakeg_title">
-                                        <h4>Desserts</h4>
+                                        <h4>Best selling product</h4>
                                     </div>
 
-                                    <ul>
-                                        <li> Chocolate Cake...........................................................$19.95 </li>
-                                        <li> Pancake..................................................................$10 </li>
-                                        <li> Strawberry Cookies.......................................................$5 </li>
-                                        <li> Sundae Icecream..........................................................$24.5 </li>
-                                        <li> Creme de Blu.............................................................$19.99 </li>
-                                    </ul>
+                                    <h5> Our most impressive product is Rubik cude having sold for more than 5.000 products in previous year </h5>
                                 </div>
                             </div>
                         </div>
