@@ -5,7 +5,7 @@ include_once("connection.php");
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Bunny restaurant</title>
+        <title>ATN company</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -34,7 +34,7 @@ include_once("connection.php");
                     <div class="abouts_content">
                         <div class="col-md-6">
                             <div class="single_abouts_text text-center wow slideInLeft" data-wow-duration="1s">
-                                <img src="assets/images/ab.png" alt="" />
+                                <img src="assets/images/Store.png" alt="" />
                             </div>
                         </div>
 
@@ -64,66 +64,66 @@ include_once("connection.php");
 
                             <div class="main_portfolio_content">
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p1.png" alt="" />
+                                    <img src="assets/images/Plush.png" alt="" />
                                     <div class="portfolio_images_overlay text-center">
-                                        <h6>Cool noodles</h6>
+                                        <h6>Plushies</h6>
                                         <p class="product_price">$12.95</p>
                                         
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p2.png" alt="" />
+                                    <img src="assets/images/Train.png" alt="" />
                                     <div class="portfolio_images_overlay text-center">
-                                        <h6>Roasted pork</h6>
-                                        <p class="product_price">$5.5</p>
+                                        <h6>Toy train</h6>
+                                        <p class="product_price">$15.5</p>
                                         
                                     </div>								
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p3.png" alt="" />
+                                    <img src="assets/images/Phone.png" alt="" />
                                     <div class="portfolio_images_overlay text-center">
-                                        <h6>Roasted chicken</h6>
+                                        <h6>Toy phone</h6>
                                         <p class="product_price">$6</p>
                                         
                                     </div>								
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p4.png" alt="" />
+                                    <img src="assets/images/Car.png" alt="" />
                                     <div class="portfolio_images_overlay text-center">
-                                        <h6>Spring roll</h6>
+                                        <h6>Toy car</h6>
                                         <p class="product_price">$6</p>
                                         
                                     </div>								
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p5.png" alt="" />
+                                    <img src="assets/images/Figure.png" alt="" />
                                     <div class="portfolio_images_overlay text-center">
-                                        <h6>Avocado salad</h6>
-                                        <p class="product_price">$3.99</p>
+                                        <h6>Action Figure</h6>
+                                        <p class="product_price">$13.99</p>
                                        
                                     </div>								
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p6.png" alt="" />
+                                    <img src="assets/images/Doll.png" alt="" />
                                     <div class="portfolio_images_overlay text-center">
-                                        <h6>Italian Source Fish</h6>
+                                        <h6>Doll</h6>
                                         <p class="product_price">$12</p>
                                     
                                     </div>								
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p7.png" alt="" />
+                                    <img src="assets/images/Rubik.png" alt="" />
                                     <div class="portfolio_images_overlay text-center">
-                                        <h6>Pork cake</h6>
-                                        <p class="product_price">$4</p>
+                                        <h6>Rubik cube</h6>
+                                        <p class="product_price">$4.99</p>
                                         
                                     </div>								
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p8.png" alt="" />
+                                    <img src="assets/images/fidget-tangle.jpg" alt="" />
                                     <div class="portfolio_images_overlay text-center">
-                                        <h6>Fish and chip</h6>
-                                        <p class="product_price">$2</p>
+                                        <h6>Fidget tangle</h6>
+                                        <p class="product_price">$5.99</p>
                                         
                                     </div>								
                                 </div>
