@@ -83,7 +83,7 @@
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                                    <a class="navbar-brand our_logo" href="?page=index"><img src="assets/images/logo.png" alt="" /></a>
+                                    <a class="navbar-brand our_logo" href="?page=index"><img src="assets/images/Logo1.png" alt="" /></a>
                                 </div>
 
                                 <!-- Collect the nav links, forms, and other content for toggling -->
