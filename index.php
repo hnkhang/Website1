@@ -138,7 +138,7 @@
                             <div class="col-md-12">
                                 <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
                                     <h1>ATN toy company</h1>
-                                    <p> The best place in the world for toy lovers</p>
+                                    <p> best place in the world for toy lovers</p>
                                     
                                 </div>
                             </div>	

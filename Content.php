@@ -120,7 +120,7 @@ include_once("connection.php");
                                     </div>								
                                 </div>
                                 <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/fidget-tangle.jpg" alt="" />
+                                    <img src="assets/images/fidget-tangle.png" alt="" />
                                     <div class="portfolio_images_overlay text-center">
                                         <h6>Fidget tangle</h6>
                                         <p class="product_price">$5.99</p>
