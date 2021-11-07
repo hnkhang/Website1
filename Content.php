@@ -134,59 +134,6 @@ include_once("connection.php");
             </div>
         </section>
 
-        <section id="ourPakeg" class="ourPakeg">
-            <div class="container">
-                <div class="main_pakeg_content">
-                    <div class="row">
-                        <div class="head_title text-center">
-                            <h4>Amazing</h4>
-                            <h3>Best of us</h3>
-                        </div>
-
-                        <div class="single_pakeg_one text-right wow rotateInDownRight">
-                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
-                                <div class="single_pakeg_text">
-                                    <div class="pakeg_title">
-                                        <h4>Company Branch</h4>
-                                    </div>
-
-                                    <h5> The ATN company has many stores all over Viet Nam. Our stores locate in Ho Chi Minh city, Can Tho city, Ha Noi capital,... </h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_pakeg_two text-left wow rotateInDownLeft">
-                            <div class="col-md-6 col-sm-8">
-                                <div class="single_pakeg_text">
-                                    <div class="pakeg_title">
-                                        <h4>Feature </h4>
-                                    </div>
-
-                                    <ul>
-                                        <li> We sell many toys from big to small  </li>
-                                        <li> Online support 24/7 </li>
-                                        <li> Our website support online ordering </li>
-                                        <li> Toys suitable for tenager and kid alike </li>
-                                        <li> We deliver our toys with love </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_pakeg_three text-left wow rotateInDownRight">
-                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
-                                <div class="single_pakeg_text">
-                                    <div class="pakeg_title">
-                                        <h4>Best selling product</h4>
-                                    </div>
-
-                                    <h5> Our most impressive product is Rubik cude having sold for more than 5.000 products in previous year </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         
