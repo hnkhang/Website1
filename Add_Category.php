@@ -43,20 +43,20 @@
 				 <div class="form-group">
 						    <label for="txtTen" class="col-sm-2 control-label">Category ID(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtID" id="txtID" class="form-control" placeholder="Category ID" value='<?php echo isset($_POST["txtID"])?($_POST["txtID"]):"";?>'>
+							      <input type="text" name="txtID" id="txtID" class="form-control" placeholder="Category ID" value=''/>
 							</div>
 					</div>	
 				 <div class="form-group">
 						    <label for="txtTen" class="col-sm-2 control-label">Category Name(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Category Name" value='<?php echo isset($_POST["txtName"])?($_POST["txtName"]):"";?>'>
+							      <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Category Name" value=''/>
 							</div>
 					</div>
                     
                     <div class="form-group">
 						    <label for="txtMoTa" class="col-sm-2 control-label">Description(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtDes" id="txtDes" class="form-control" placeholder="Description" value='<?php echo isset($_POST["txtDes"])?($_POST["txtDes"]):"";?>'>
+							      <input type="text" name="txtDes" id="txtDes" class="form-control" placeholder="Description" value=''/>
 							</div>
 					</div>
                     
