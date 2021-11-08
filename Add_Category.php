@@ -26,7 +26,7 @@
 				$sq = "SELECT * FROM category where cat_id ='$id' or cat_name = '$name'";
 				$result = pg_query($conn, $sq);
 				if(pg_num_rows($result)==0){
-					$sqlstring = "INSERT INTO category(cat_id, cat_name, cat_des) VALUES ('$id', '$name', '$des')";
+					$sqlstring = "INSERT into category (cat_id, cat_name, cat_des) VALUES ('$id', '$name', '$des')";
 					pg_query($conn,$sqlstring);
 					echo '<meta http-equiv="refresh" content="0; URL=?page=category_management"/>';
 				}
@@ -43,20 +43,20 @@
 				 <div class="form-group">
 						    <label for="txtTen" class="col-sm-2 control-label">Category ID(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtID" id="txtID" class="form-control" placeholder="Category ID" value=''/>
+							      <input type="text" name="txtID" id="txtID" class="form-control" placeholder="Category ID" value='<?php echo isset($_POST["txtID"])?($_POST["txtID"]):"";?>'/>
 							</div>
 					</div>	
 				 <div class="form-group">
 						    <label for="txtTen" class="col-sm-2 control-label">Category Name(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Category Name" value=''/>
+							      <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Category Name" value='<?php echo isset($_POST["txtName"])?($_POST["txtName"]):"";?>'/>
 							</div>
 					</div>
                     
                     <div class="form-group">
 						    <label for="txtMoTa" class="col-sm-2 control-label">Description(*):  </label>
 							<div class="col-sm-10">
-							      <input type="text" name="txtDes" id="txtDes" class="form-control" placeholder="Description" value=''/>
+							      <input type="text" name="txtDes" id="txtDes" class="form-control" placeholder="Description" value='<?php echo isset($_POST["txtDes"])?($_POST["txtDes"]):"";?>'/>
 							</div>
 					</div>
                     
