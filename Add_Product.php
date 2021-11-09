@@ -15,6 +15,16 @@
 	}
 	echo "</select>";
 	}
+	function bind_Shop_List($conn){
+		$sqlstring = "select shop_id, name from shop";
+		$result = pg_query($conn,$sqlstring);
+		echo "<select name='Shop' class= 'form-control'>
+		<option value='0'>Choose shop</option>";
+		while($row=pg_fetch_array($result, Null, PGSQL_ASSOC)){
+			echo "<option value='".$row['shop_id']."'>".$row['name']."</option>";
+	}
+	echo "</select>";
+	}
 	if(isset($_POST['btnAdd']))
 	{
 		$id= $_POST["txtID"];
@@ -25,6 +35,7 @@
 		
 		$pic = $_FILES['txtImage'];
 		$category = $_POST['CategoryList'];
+		$shop = $_POST['Shop'];
 		$err = "";
 
 		if(trim($id)==""){
@@ -35,6 +46,9 @@
 		}
 		if($category=="0"){
 			$err .= "<li>choose product category please</li>";
+		}
+		if($shop=="0"){
+			$err .= "<li>choose shop please</li>";
 		}
 		if(!is_numeric($price)){
 			$err .= "<li>Product price must be a number</li>";
@@ -53,8 +67,8 @@
 					{
 						copy($pic['tmp_name'], "assets/images/".$pic['name']);
 						$filePic = $pic['name'];
-						$sqlstring = "INSERT into product(product_id, product_name, price, detaildesc, pro_image, cat_id) 
-						VALUES ('$id','$proname', '$price', '$detail', '$filePic', '$category')";
+						$sqlstring = "INSERT into product(product_id, product_name, price, detaildesc, pro_image, cat_id, shop_id) 
+						VALUES ('$id','$proname', '$price', '$detail', '$filePic', '$category', '$shop')";
 						
 						pg_query($conn,$sqlstring);
 						echo '<meta http-equiv="refresh" content="0; URL=?page=product_management">';
@@ -97,6 +111,12 @@
 							      <?php bind_Category_List($conn); ?>
 							</div>
                 </div>  
+				<div class="form-group">   
+                    <label for="" class="col-sm-2 control-label">Shop(*):  </label>
+							<div class="col-sm-10">
+							      <?php bind_Shop_List($conn); ?>
+							</div>
+                </div> 
                           
                 <div class="form-group">  
                     <label for="lblGia" class="col-sm-2 control-label">Price(*):  </label>
