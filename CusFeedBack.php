@@ -15,7 +15,7 @@
                     <th><strong>No.</strong></th>
                     <th><strong>Customer username</strong></th>
                     <th><strong>Customer email</strong></th>
-                     <th><strong>Description</strong></th>
+                     <th><strong>Feedback details</strong></th>
                 </tr>
              </thead>
 

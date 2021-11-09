@@ -185,7 +185,7 @@
         elseif($page=='feed_back'){
             include_once("FeedBack.php");
             }
-            elseif($page=='view_feedback'){
+        elseif($page=='view_feedback'){
                 include_once("CusFeedBack.php");
                 }
          elseif($page=='booking'){
