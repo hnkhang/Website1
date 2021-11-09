@@ -100,6 +100,7 @@
                                         <li><a href="?page=logout">Log out</a></li>
                                         <li><a href="?page=product_management">Product</a></li>
                                         <li><a href="?page=category_management">Category</a></li>
+                                        <li><a href="?page=view_feedback">View FeedBack</a></li>
                                               
                                             <?php
                                             }
@@ -184,6 +185,9 @@
         elseif($page=='feed_back'){
             include_once("FeedBack.php");
             }
+            elseif($page=='view_feedback'){
+                include_once("CusFeedBack.php");
+                }
          elseif($page=='booking'){
             include_once("Booking.php");
             }
