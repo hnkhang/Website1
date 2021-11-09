@@ -33,9 +33,7 @@
 		$category = $_POST['CategoryList'];
 
 		$err = "";
-		if(trim($id)==""){
-			$err .= "<li>Enter ID pls</li>";
-		}
+		
 		if(trim($proname)==""){
 			$err .= "<li>Enter product name please</li>";
 		}
@@ -122,7 +120,7 @@
 					<label for="txtTen" class="col-sm-2 control-label">Product ID(*):  </label>
 							<div class="col-sm-10">
 								  <input type="text" name="txtID" id="txtID" class="form-control" 
-								  placeholder="Product ID" value='<?php echo $id; ?>'/>
+								  placeholder="Product ID" readonly value='<?php echo $id; ?>'/>
 							</div>
 				</div> 
 				<div class="form-group"> 
