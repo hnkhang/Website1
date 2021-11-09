@@ -44,6 +44,7 @@ include_once("connection.php");
                     <th><strong>Product Name</strong></th>
                     <th><strong>Price($)</strong></th>
                     <th><strong>Category</strong></th>
+                    <th><strong>Shop</strong></th>
                     <th><strong>Image</strong></th>
                     <th><strong>Edit</strong></th>
                     <th><strong>Delete</strong></th>
@@ -53,9 +54,9 @@ include_once("connection.php");
 			<tbody>
             <?php
             				$No = 1;
-                $result = pg_query($conn, "SELECT product_id, product_name, price, pro_image, cat_name 
-                From product a, category b
-                where a.cat_id = b.cat_id order by price DESC ");
+                $result = pg_query($conn, "SELECT product_id, product_name, price, pro_image, cat_name, name 
+                From product a, category b, shop c
+                where a.cat_id = b.cat_id AND a.shop_id = c.shop_id order by price DESC ");
 
                 while($row=pg_fetch_array($result, Null, PGSQL_ASSOC))
                 {
@@ -66,6 +67,7 @@ include_once("connection.php");
               <td><?php echo $row["product_name"]; ?></td>
               <td><?php echo $row["price"]; ?></td>
               <td><?php echo $row["cat_name"]; ?></td>
+              <td><?php echo $row["name"]; ?></td>
              <td align='center' class='cotNutChucNang'>
                  <img src='assets/images/<?php echo $row['pro_image'] ?>' border='0' width="50" height="50"  /></td>
              <td align='center' class='cotNutChucNang'><a href="?page=update_product&&id=<?php echo $row["product_id"];?>"><img src='assets/images/edit.png' border='0'/></a></td>
