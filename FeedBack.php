@@ -34,9 +34,9 @@
             echo $err;
         }
         else{
-                $us = htmlspecialchars(pg_real_escape_string($conn,$us));
-				$email = htmlspecialchars(pg_real_escape_string($conn,$email));
-				$sub = htmlspecialchars(pg_real_escape_string($conn,$sub));
+                $us = htmlspecialchars(pg_escape_string($conn,$us));
+				$email = htmlspecialchars(pg_escape_string($conn,$email));
+				$sub = htmlspecialchars(pg_escape_string($conn,$sub));
 				
                 $sq = "SELECT * FROM feedback where username='$us' and email = '$email' and description='$sub'";
 				$result = pg_query($conn, $sq);
