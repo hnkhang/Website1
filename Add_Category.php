@@ -26,8 +26,8 @@
 				$sq = "SELECT * FROM category where cat_id ='$id' or cat_name = '$name'";
 				$result = pg_query($conn, $sq);
 				if(pg_num_rows($result)==0){
-					$sqlstring = "INSERT into category (cat_id, cat_name, cat_des) VALUES ('$id', '$name', '$des')";
-					pg_query($conn,$sqlstring);
+					
+					pg_query($conn,"INSERT into category (cat_id, cat_name, cat_des) VALUES ('$id', '$name', '$des')") or die(pg_errormessage($conn));
 					echo '<meta http-equiv="refresh" content="0; URL=?page=category_management"/>';
 				}
 				else{
